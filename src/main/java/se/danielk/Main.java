@@ -17,11 +17,17 @@ public class Main {
         System.out.println("Option: ");
 
         int option = scanner.nextInt();
-        String answer;
+
+
         switch (option) {
 
+            case 0:
+                System.out.println("Thanks for using the currency converter!");
+                return;
+
+
             case 1:
-                System.out.println("Enter the amount of SEK you would like to convert: ");
+            System.out.println("Enter the amount of SEK you would like to convert: ");
 
                 double SEK = scanner.nextDouble();
 
@@ -34,7 +40,8 @@ public class Main {
 
 
                 break;
-            case 2:
+
+        case 2:
                 System.out.println("Enter the amount of USD you would like to convert: ");
 
                 double USD = scanner.nextDouble();
@@ -46,6 +53,7 @@ public class Main {
                 }
 
                 break;
+
             case 3:
                 System.out.println("Enter the amount of SEK you would like to convert: ");
 
@@ -58,6 +66,7 @@ public class Main {
                 }
 
                 break;
+
             case 4:
                 System.out.println("Enter the amount of EURO you would like to convert: ");
 
@@ -70,20 +79,19 @@ public class Main {
                 }
 
                 break;
-            case 0:
-                scanner.close();
 
-                break;
 
             default:
                 System.out.println("Invalid Answer!");
-        }
 
 
-            System.out.println("Would you like to convert some more currency?");
-            answer = scanner.next();
         }
-        while (answer.equals("yes"));
+
 
 
     }
+
+
+
+}
+
